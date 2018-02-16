@@ -1,0 +1,142 @@
+<! My DocType HTML>
+
+<html>
+	<head>
+	
+		<title>Mozarts Travels</title>
+	
+		<link href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" rel="stylesheet" type="text/css" />
+		<!-- <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"></script> -->
+		<script src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet-src.js"></script>
+
+		
+		<meta charset="utf-8">
+		
+			<!--link to stylesheet-->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- link to leaflet stylesheet-->
+		<link rel="stylesheet" href="css/leaflet.css">
+		
+				
+	</head>
+	<body>
+<div id="boxAll">
+
+			<!-- to get space on top -->
+			<div id="top"></div>
+
+			<!-- to get a "column" on the left -->
+			<div id="left">
+
+				<!-- to set the title -->
+				<div id="header">Mozart Travels</div>
+
+				<div id="mapFrame">
+					<!-- to define the map -->
+					<div id="map"></div>
+				</div>
+
+			</div>
+
+			<!-- to get a "column" on the right -->
+			<div id="right">
+
+				<div id="pictureFrame">
+					<!-- to set the (default) picture -->
+					<img id="picture" src="css/images/m1-1.png" />
+				</div>
+
+				<div id="text">
+					<!-- will be filled when a market is clicked -->
+					<p id="name"></p>
+					<p id="time"></p>
+					<p id="place"></p>
+					<!-- default text -->
+					<p id="description">Wolfgang Amadeus Mozart was born on January 27, 1756 to Leopold Mozart and Anna Maria née Pertl in Salzburg. He was the youngest of seven children. While Wolfgang was young, his family made several European journeys in which he and his elder sister was Maria Anna Mozart(nickname – Nannerl) performed as child prodigies.
+					</p>
+				</div>
+
+			</div>
+
+			<!-- to get space on the bottom -->
+			<div id="bottom">
+			<button onclick="firstSnake()">First Trip</button>
+
+		<script>
+		function firstSnake() {
+			mFirstTrip
+				.snakeIn()
+				.on('snakestart snake snakeend', function(ev){
+				console.log(ev.type);
+		})
+		map.setView(new L.LatLng(48.79963, 14.93042), 6.5);
+		};
+		</script>
+		
+				<button onclick="secondSnake()">Second Trip</button>
+
+		<script>
+		function secondSnake() {
+			mSecondTrip
+				.snakeIn()
+				.on('snakestart snake snakeend', function(ev){
+				console.log(ev.type);
+		})
+		map.setView(new L.LatLng(48.53116, 8.12988), 6);
+		}
+		</script>
+		
+				<button onclick="thirdSnake()">Third Trip</button>
+
+		<script>
+		function thirdSnake() {
+			mThirdTrip
+				.snakeIn()
+				.on('snakestart snake snakeend', function(ev){
+				console.log(ev.type);
+		})
+		map.setView(new L.LatLng(43.91372, 10.96436), 5.2);
+		}
+		</script>
+		
+				<button onclick="fourthSnake()">Fourth Trip</button>
+
+		<script>
+		function fourthSnake() {
+			mFourthTrip
+				.snakeIn()
+				.on('snakestart snake snakeend', function(ev){
+				console.log(ev.type);
+		})
+		map.setView(new L.LatLng(48.45835, 9.11865), 6);
+		}
+		</script>
+		
+				<button onclick="fifthSnake()">Fifth Trip</button>
+
+		<script>
+		function fifthSnake() {
+			mFifthTrip
+				.snakeIn()
+				.on('snakestart snake snakeend', function(ev){
+				console.log(ev.type);
+		})
+		map.setView(new L.LatLng(50.54136, 12.26074), 6);
+		}
+		</script>
+			</div>
+
+		</div>
+		<!-- link to file with cities -->
+		<script src="data/allCities.js"></script>
+		
+		<!-- link to leaflet javascript library-->
+		<script src="js/leaflet-src.js"></script>
+
+		<!-- link to my main javascript file -->
+		<script src="js/my_main.js"></script>
+		
+		
+	</body>
+</html>
