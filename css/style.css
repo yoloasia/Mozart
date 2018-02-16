@@ -6,14 +6,96 @@ body{
 	font-family: "Helvetica Neue", Arial, Helveticam sans-serif;
 }
 
-h1 {
-    color: blue;
-    margin-left: 35%;
+h2 {
+    color: black;
+    margin-left: 25%;
 }
 
 #map {
-	height: 800px;
-	width: 1000px;
+	height: 86%;
+	width: 60%;
 	margin-left: 0%;
+	margin-right: 40%;
 }
 	
+#boxAll {
+	background: white;
+	width: 1045px;
+	margin: 0 auto; /*to center the box*/
+	border-radius: 3px; /*to round the edges*/
+}
+
+#left {
+	float: left;
+	width: 715px;
+	padding-left: 1px;
+}
+
+#right {
+	margin-left: 730px;
+	width: 300px;
+}
+
+#top {
+	height: 5px;
+}
+
+#bottom {
+	clear: left;
+	height: 15px;
+}
+
+
+
+/************************/
+/* elements on the left */
+/************************/
+
+#header {
+	height: 2em;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#mapFrame {
+	height: 500px;
+	width: 780px;
+}
+
+#map {
+	height: 100%;
+	width: 90%;
+	border-radius: 3px;
+}
+
+
+
+/***********************************/
+/* elements on the right - picture */
+/***********************************/
+
+#picture {
+	height: 50%;
+	width: 100%;
+}
+
+
+
+/********************************/
+/* elements on the right - text */
+/********************************/
+
+#name {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+#time {
+	font-size: 1.2em;
+}
+
+#place {
+	font-size: 1.2em;
+}
+
