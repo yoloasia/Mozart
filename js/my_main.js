@@ -305,6 +305,7 @@ var cities = L.geoJson(allCities, {
 });
 cities.addTo(map);
 
+ 
 
 //map.addEventListener('click', function(e) {
   //  alert(e.latlng);
