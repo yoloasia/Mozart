@@ -41,9 +41,6 @@ iconSize: [12, 12],
 
 //hide funcion
 
-onlyFirst: funcion(
-)
-
 
 /////////////////////////////////////////////////////////////
 // snake funcion
