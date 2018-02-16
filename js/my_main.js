@@ -294,8 +294,56 @@ iconUrl: 'css/images/firstIcon.png',
 iconSize: [20, 20],
 });
 
+var allCities = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                                                                  
+"features": [
+{ "type": "Feature", "properties": { "id": "1", "name": "Salzburg" }, "geometry": { "type": "Point", "coordinates": [ 13.003368733045299, 47.808980317142939 ] } },
+{ "type": "Feature", "properties": { "id": "2", "name": "Munich" }, "geometry": { "type": "Point", "coordinates": [ 11.572166149630215, 48.13858536251869 ] } },
+{ "type": "Feature", "properties": { "id": "3", "name": "Vienna" }, "geometry": { "type": "Point", "coordinates": [ 16.374121949014238, 48.207761196363364 ] } },
+{ "type": "Feature", "properties": { "id": "4", "name": "Prague" }, "geometry": { "type": "Point", "coordinates": [ 14.419904642902383, 50.087038015810172 ] } },
+{ "type": "Feature", "properties": { "id": "5", "name": "Passau" }, "geometry": { "type": "Point", "coordinates": [ 13.461819344153739, 48.573816650458078 ] } },
+{ "type": "Feature", "properties": { "id": "6", "name": "Linz" }, "geometry": { "type": "Point", "coordinates": [ 14.284435301623242, 48.305183829027939 ] } },
+{ "type": "Feature", "properties": { "id": "7", "name": "Bratislava" }, "geometry": { "type": "Point", "coordinates": [ 17.110268114177916, 48.152420529287625 ] } },
+{ "type": "Feature", "properties": { "id": "8", "name": "Augsburg" }, "geometry": { "type": "Point", "coordinates": [ 10.895972373798616, 48.364559753077963 ] } },
+{ "type": "Feature", "properties": { "id": "9", "name": "Schwetzingen" }, "geometry": { "type": "Point", "coordinates": [ 8.572817287181865, 49.382597441158637 ] } },
+{ "type": "Feature", "properties": { "id": "10", "name": "Mainz" }, "geometry": { "type": "Point", "coordinates": [ 8.270028897790931, 50.000135874542806 ] } },
+{ "type": "Feature", "properties": { "id": "11", "name": "Frakfurt on Main" }, "geometry": { "type": "Point", "coordinates": [ 8.681625109166708, 50.112258371899387 ] } },
+{ "type": "Feature", "properties": { "id": "12", "name": "Koblenz" }, "geometry": { "type": "Point", "coordinates": [ 7.593402772997785, 50.354229674035238 ] } },
+{ "type": "Feature", "properties": { "id": "13", "name": "Brussel" }, "geometry": { "type": "Point", "coordinates": [ 4.351362026811028, 50.846531024896457 ] } },
+{ "type": "Feature", "properties": { "id": "14", "name": "Mannheim" }, "geometry": { "type": "Point", "coordinates": [ 8.463865348876519, 49.49183761210503 ] } },
+{ "type": "Feature", "properties": { "id": "15", "name": "Paris" }, "geometry": { "type": "Point", "coordinates": [ 2.3487216370079, 48.857725801862252 ] } },
+{ "type": "Feature", "properties": { "id": "16", "name": "London" }, "geometry": { "type": "Point", "coordinates": [ -0.127773214631203, 51.51177196036933 ] } },
+{ "type": "Feature", "properties": { "id": "17", "name": "The Hague" }, "geometry": { "type": "Point", "coordinates": [ 4.310144759145244, 52.080743193741753 ] } },
+{ "type": "Feature", "properties": { "id": "18", "name": "Zurich" }, "geometry": { "type": "Point", "coordinates": [ 8.541976394592782, 47.37159830476601 ] } },
+{ "type": "Feature", "properties": { "id": "19", "name": "Donaueschingen" }, "geometry": { "type": "Point", "coordinates": [ 8.500470894285982, 47.948207703125433 ] } },
+{ "type": "Feature", "properties": { "id": "20", "name": "Innsbruck" }, "geometry": { "type": "Point", "coordinates": [ 11.392885446916141, 47.266681623434948 ] } },
+{ "type": "Feature", "properties": { "id": "21", "name": "Bolzano" }, "geometry": { "type": "Point", "coordinates": [ 11.353685807737497, 46.498829867759142 ] } },
+{ "type": "Feature", "properties": { "id": "22", "name": "Rovereto" }, "geometry": { "type": "Point", "coordinates": [ 11.045565114487708, 45.887200203515896 ] } },
+{ "type": "Feature", "properties": { "id": "23", "name": "Verona" }, "geometry": { "type": "Point", "coordinates": [ 10.990224447411974, 45.439863144653714 ] } },
+{ "type": "Feature", "properties": { "id": "24", "name": "Mantua" }, "geometry": { "type": "Point", "coordinates": [ 10.791920390390594, 45.158548087018737 ] } },
+{ "type": "Feature", "properties": { "id": "25", "name": "Milan" }, "geometry": { "type": "Point", "coordinates": [ 9.187041045194308, 45.467533478191591 ] } },
+{ "type": "Feature", "properties": { "id": "26", "name": "Lodi" }, "geometry": { "type": "Point", "coordinates": [ 9.500638158623467, 45.310734921477014 ] } },
+{ "type": "Feature", "properties": { "id": "27", "name": "Parma" }, "geometry": { "type": "Point", "coordinates": [ 10.326136442503168, 44.803445473282778 ] } },
+{ "type": "Feature", "properties": { "id": "28", "name": "Bologna" }, "geometry": { "type": "Point", "coordinates": [ 11.3418682694557, 44.494460082109917 ] } },
+{ "type": "Feature", "properties": { "id": "29", "name": "Florence" }, "geometry": { "type": "Point", "coordinates": [ 11.25366908130375, 43.771572618433161 ] } },
+{ "type": "Feature", "properties": { "id": "30", "name": "Rome" }, "geometry": { "type": "Point", "coordinates": [ 12.48499892373883, 41.893448729550464 ] } },
+{ "type": "Feature", "properties": { "id": "31", "name": "Naples" }, "geometry": { "type": "Point", "coordinates": [ 14.24898268677785, 40.835058471727073 ] } },
+{ "type": "Feature", "properties": { "id": "32", "name": "Loreto" }, "geometry": { "type": "Point", "coordinates": [ 13.609106223714683, 43.441834477106958 ] } },
+{ "type": "Feature", "properties": { "id": "33", "name": "Rimini" }, "geometry": { "type": "Point", "coordinates": [ 12.566856993788363, 44.059805259452666 ] } },
+{ "type": "Feature", "properties": { "id": "34", "name": "Turin" }, "geometry": { "type": "Point", "coordinates": [ 7.681890193790784, 45.066313641892577 ] } },
+{ "type": "Feature", "properties": { "id": "35", "name": "Venice" }, "geometry": { "type": "Point", "coordinates": [ 12.335117950408724, 45.437557283525614 ] } },
+{ "type": "Feature", "properties": { "id": "36", "name": "Brescia" }, "geometry": { "type": "Point", "coordinates": [ 10.219490365325985, 45.540168103728533 ] } },
+{ "type": "Feature", "properties": { "id": "37", "name": "Padua" }, "geometry": { "type": "Point", "coordinates": [ 11.872792794213531, 45.408734019423655 ] } },
+{ "type": "Feature", "properties": { "id": "38", "name": "Leipzig" }, "geometry": { "type": "Point", "coordinates": [ 12.375470520151442, 51.333644188219409 ] } },
+{ "type": "Feature", "properties": { "id": "39", "name": "Dresden" }, "geometry": { "type": "Point", "coordinates": [ 13.731316863506917, 51.047717408328118 ] } },
+{ "type": "Feature", "properties": { "id": "40", "name": "Berlin" }, "geometry": { "type": "Point", "coordinates": [ 13.390049416539892, 52.514245085835057 ] } }
+]
+};
 
-var cities = L.geoJson(allCities), {
+
+var cities = L.geoJson(allCities, {
 	pointToLayer: function(feature, latlng) { return L.marker(latlng, {icon: starIcon});},
 	onEachFeature: function(feature, marker) {
 			marker.bindPopup(feature.properties.name);;
