@@ -295,7 +295,7 @@ iconSize: [20, 20],
 });
 
 
-var cities = L.geoJson(allCities, {
+var cities = L.geoJson(allCities), {
 	pointToLayer: function(feature, latlng) {
     return  L.marker(latlng, {icon: starIcon});
 	},
