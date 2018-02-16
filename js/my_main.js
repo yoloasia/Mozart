@@ -39,8 +39,6 @@ iconUrl: 'css/images/star.png',
 iconSize: [12, 12],
 });
 
-//hide funcion
-
 
 /////////////////////////////////////////////////////////////
 // snake funcion
