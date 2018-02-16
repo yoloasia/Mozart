@@ -25,7 +25,7 @@
 
 		<!-- to get space on top -->
 		<div id="top"> 
-			<button onclick="map.removeLayer(mSecondTrip, mThirdTrip, mFourthTrip, mFifthTrip); map.addLayer(mFirstTrip); firstSnake(); "  color="#ff7800">First Trip</button>
+			<button onclick="firstSnake(); "  color="#ff7800">First Trip</button>
 
 			
 		<script>
@@ -40,7 +40,7 @@
 		};
 		</script>
 		
-				<button onclick="map.removeLayer(mFirstTrip, mThirdTrip, mFourthTrip, mFifthTrip); map.addLayer(mSecondTrip);secondSnake()">Second Trip</button>
+				<button onclick="secondSnake()">Second Trip</button>
 
 		<script>
 		function secondSnake() {
@@ -53,7 +53,7 @@
 		}
 		</script>
 		
-				<button onclick="map.removeLayer(mSecondTrip, mFirstTrip, mFourthTrip, mFifthTrip); map.addLayer(mThirdTrip);thirdSnake()">Third Trip</button>
+				<button onclick="thirdSnake()">Third Trip</button>
 
 		<script>
 		function thirdSnake() {
@@ -66,7 +66,7 @@
 		}
 		</script>
 		
-				<button onclick="map.removeLayer(mSecondTrip, mThirdTrip, mFirstTrip, mFifthTrip); map.addLayer(mFourthTrip);fourthSnake()">Fourth Trip</button>
+				<button onclick="fourthSnake()">Fourth Trip</button>
 
 		<script>
 		function fourthSnake() {
@@ -79,7 +79,7 @@
 		}
 		</script>
 		
-				<button onclick="map.removeLayer(mSecondTrip, mThirdTrip, mFourthTrip, mFirstTrip); map.addLayer(mFifthTrip);fifthSnake()">Fifth Trip</button>
+				<button onclick="fifthSnake()">Fifth Trip</button>
 
 		<script>
 		function fifthSnake() {
