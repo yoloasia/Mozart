@@ -344,12 +344,15 @@ var allCities = {
 
 
 var cities = L.geoJson(allCities, {
-	pointToLayer: function(feature, latlng) { return L.marker(latlng, {icon: starIcon});},
+	pointToLayer: function(feature, latlng) { 
+		return L.marker(latlng, {icon: starIcon})
+		},
 	onEachFeature: function(feature, marker) {
 			marker.bindPopup(feature.properties.name);;
 	}
 });
 cities.addTo(map);
+
 
  
 
