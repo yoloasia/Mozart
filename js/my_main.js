@@ -39,6 +39,11 @@ iconUrl: 'css/images/star.png',
 iconSize: [12, 12],
 });
 
+//hide funcion
+
+onlyFirst: funcion(
+)
+
 
 /////////////////////////////////////////////////////////////
 // snake funcion
@@ -480,7 +485,7 @@ var cities = L.geoJson(allCities, {
 });
 cities.addTo(map);
 
-
+map.removeLayers(mFirstTrip);
  
 
 //map.addEventListener('click', function(e) {
