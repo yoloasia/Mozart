@@ -52,50 +52,20 @@ h2 {
 /************************/
 
 #header {
-	height: 2em;
+	height: 1em;
 	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
 }
 
 #mapFrame {
-	height: 500px;
-	width: 780px;
+	height: 800px;
+	width: 950px;
 }
 
 #map {
 	height: 100%;
 	width: 90%;
 	border-radius: 3px;
-}
-
-
-
-/***********************************/
-/* elements on the right - picture */
-/***********************************/
-
-#picture {
-	height: 50%;
-	width: 100%;
-}
-
-
-
-/********************************/
-/* elements on the right - text */
-/********************************/
-
-#name {
-	font-size: 1.4em;
-	font-weight: bold;
-}
-
-#time {
-	font-size: 1.2em;
-}
-
-#place {
-	font-size: 1.2em;
 }
 
