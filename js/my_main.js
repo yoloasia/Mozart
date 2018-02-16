@@ -27,7 +27,17 @@ var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/
 });
 Esri_NatGeoWorldMap.addTo(map);
 
+//first trip icon
+var firstTripIcon = L.icon({
+iconUrl: 'css/images/firstIcon.png',
+iconSize: [20, 20],
+});
 
+//staricon
+var starIcon = L.icon({
+iconUrl: 'css/images/star.png',
+iconSize: [12, 12],
+});
 
 
 /////////////////////////////////////////////////////////////
@@ -409,17 +419,7 @@ var myPolygonStyle = {
 	"weight": 2
 }
 
-//staricon
-var starIcon = L.icon({
-iconUrl: 'css/images/star.png',
-iconSize: [12, 12],
-});
 
-//first trip icon
-var firstTripIcon = L.icon({
-iconUrl: 'css/images/firstIcon.png',
-iconSize: [20, 20],
-});
 
 var allCities = {
 "type": "FeatureCollection",
