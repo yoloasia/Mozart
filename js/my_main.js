@@ -5,7 +5,7 @@
 
 // creating variable 'map'
 var map = L.map('map', {
-    center: [47.0, 11.0],
+    center: [45.0, 11.0],
     zoom: 4.5
 });
 
