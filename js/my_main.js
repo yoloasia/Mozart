@@ -29,7 +29,7 @@ Esri_NatGeoWorldMap.addTo(map);
 
 //first trip icon
 var firstTripIcon = L.icon({
-iconUrl: 'css/images/firstIcon.png',
+iconUrl: 'css/images/firstIcon.jpeg',
 iconSize: [20, 20],
 });
 
