@@ -364,9 +364,6 @@ L.animatedMarker = function (latlngs, options) {
   return new L.AnimatedMarker(latlngs, options);
 };
 
-var animatedMarker = L.animatedMarker(line.getLatLngs(), {
-  icon: FirstTripIcon
-});
 
 ////////////////////////////////////////////////////////////////////////////////////
 //data
