@@ -12,8 +12,8 @@ h2 {
 }
 
 #map {
-	height: 86%;
-	width: 60%;
+	height: 95%;
+	width: 100%;
 	margin-left: 0%;
 	margin-right: 40%;
 }
@@ -42,7 +42,7 @@ h2 {
 
 #bottom {
 	clear: left;
-	height: 15px;
+	height: 250px;
 }
 
 
@@ -52,7 +52,7 @@ h2 {
 /************************/
 
 #header {
-	height: 2em;
+	height: 1em;
 	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
