@@ -368,7 +368,7 @@ L.animatedMarker = function (latlngs, options) {
 ////////////////////////////////////////////////////////////////////////////////////
 //data
 
-var animatedMarker = L.animatedMarker(mFirstTrip, (latlngs) {
+var animatedMarker = L.animatedMarker(mFirstTrip, function(feature, latlng) {
   icon: FirstTripIcon
 });
 
