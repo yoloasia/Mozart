@@ -38,13 +38,13 @@
 		map.setView(new L.LatLng(48.79963, 14.93042), 6.5);
 		};
 				
-		  function onlyFirst() {
-			  	map.addLayer(mFirstTrip);
-			        map.removeLayer(mSecondTrip);
-			  	map.removeLayer(mThirdTrip);
-			  	map.removeLayer(mFourthTrip);
-			  	map.removeLayer(mFifthTrip);
- 			   } 
+		function onlyFirst() {
+		  	map.addLayer(mFirstTrip);
+		        map.removeLayer(mSecondTrip);
+		  	map.removeLayer(mThirdTrip);
+		  	map.removeLayer(mFourthTrip);
+		  	map.removeLayer(mFifthTrip);
+		   } 
 				
 		function firstFunc() {
 			onlyFirst()
@@ -53,7 +53,7 @@
 				
 		</script>
 		
-				<button onclick="secondSnake()">Second Trip</button>
+			<button onclick="secondFunc()">Second Trip</button>
 
 		<script>
 		function secondSnake() {
@@ -64,9 +64,24 @@
 		})
 		map.setView(new L.LatLng(48.53116, 8.12988), 6);
 		}
+			
+					
+		function onlySecond() {
+		  	map.addLayer(mSecondTrip);
+		        map.removeLayer(mFirstTrip);
+		  	map.removeLayer(mThirdTrip);
+		  	map.removeLayer(mFourthTrip);
+		  	map.removeLayer(mFifthTrip);
+		   } 
+				
+		function secondFunc() {
+			onlySecond()
+		    	secondSnake();
+		}
+			
 		</script>
 		
-				<button onclick="thirdSnake()">Third Trip</button>
+			<button onclick="thirdFunc()">Third Trip</button>
 
 		<script>
 		function thirdSnake() {
@@ -77,9 +92,23 @@
 		})
 		map.setView(new L.LatLng(43.91372, 10.96436), 5.2);
 		}
+					
+		function onlyThird() {
+		  	map.addLayer(mThirdTrip);
+		  	map.removeLayer(mFirstTrip);
+		        map.removeLayer(mSecondTrip);
+		  	map.removeLayer(mFourthTrip);
+		  	map.removeLayer(mFifthTrip);
+		   } 
+				
+		function thirdFunc() {
+			onlyThird()
+		    	thirdSnake();
+		}
+			
 		</script>
 		
-				<button onclick="fourthSnake()">Fourth Trip</button>
+			<button onclick="fourthFunc()">Fourth Trip</button>
 
 		<script>
 		function fourthSnake() {
@@ -90,9 +119,22 @@
 		})
 		map.setView(new L.LatLng(48.45835, 9.11865), 6);
 		}
+		function onlyFourth() {
+		  	map.addLayer(mFourthTrip);
+		  	map.removeLayer(mFirstTrip);
+		        map.removeLayer(mSecondTrip);
+		  	map.removeLayer(mThirdTrip);
+		  	map.removeLayer(mFifthTrip);
+ 			   } 
+				
+		function fourthFunc() {
+			onlyFourth()
+		    	fourthSnake();
+		}
+			
 		</script>
 		
-				<button onclick="fifthSnake()">Fifth Trip</button>
+			<button onclick="fifthFunc()">Fifth Trip</button>
 
 		<script>
 		function fifthSnake() {
@@ -102,6 +144,30 @@
 				console.log(ev.type);
 		})
 		map.setView(new L.LatLng(50.54136, 12.26074), 6);
+		}
+		function onlyFifth() {
+		  	map.addLayer(mFifthTrip);
+		  	map.removeLayer(mFirstTrip);
+		        map.removeLayer(mSecondTrip);
+		  	map.removeLayer(mThirdTrip);
+		  	map.removeLayer(mFourthTrip);
+
+ 		} 
+				
+		function fifthFunc() {
+			onlyFifth()
+		    	fifthSnake();
+		}
+		</script>	
+			
+		<button onclick="allSnakes; ">All trips</button>
+		<script>
+		function allSnakes() {
+		    	firstSnake();
+			secondSnake();
+			thirdSnake();
+		    	fourthSnake();
+		    	fifthSnake();
 		}
 		</script>	
 			</div>
