@@ -100,7 +100,7 @@ L.Polyline.include({
 
 		var now = performance.now();
 		var diff = now - this._snakingTime;	// In milliseconds
-		var forward = diff * this.options.snakingSpeed / 20000;	// In pixels
+		var forward = diff * this.options.snakingSpeed / 1000;	// In pixels
 		this._snakingTime = now;
 
 		// Chop the head from the previous frame
