@@ -22,12 +22,6 @@
 	</head>
 	<body>
 		
-		<ul>
-    <li><a id="restaurants" href="#">restaurants</a></li>
-    <li><a id="sport" href="#">sport</a></li>
-    <li><a id="sights" href="#">sights</a></li>
-</ul>
-
 
 		<!-- to get space on top -->
 		<div id="top"> 
@@ -40,10 +34,23 @@
 				.snakeIn()
 				.on('snakestart snake snakeend', function(ev){
 				console.log(ev.type);
-				
-		})
+				})
 		map.setView(new L.LatLng(48.79963, 14.93042), 6.5);
 		};
+				
+		  funcion onlyFirst() {
+			        map.removeLayer(mSecondTrip);
+			  	map.removeLayer(mThirdTrip);
+			  	map.removeLayer(mFourthTrip);
+			  	map.removeLayer(mFifthTrip);
+			  	map.addLayer(mFirstTrip);
+ 			   } 
+				
+		function firstFunc() {
+			onlyFirst()
+		    	firstSnake();
+		}
+				
 		</script>
 		
 				<button onclick="secondSnake()">Second Trip</button>
