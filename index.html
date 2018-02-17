@@ -25,7 +25,7 @@
 
 		<!-- to get space on top -->
 		<div id="top"> 
-			<button onclick="firstFunc(); " color = red>First Trip</button>
+			<button onclick="firstFunc(); ">First Trip</button>
 
 			
 		<script>
@@ -39,11 +39,11 @@
 		};
 				
 		  funcion onlyFirst() {
+			  	map.addLayer(mFirstTrip);
 			        map.removeLayer(mSecondTrip);
 			  	map.removeLayer(mThirdTrip);
 			  	map.removeLayer(mFourthTrip);
 			  	map.removeLayer(mFifthTrip);
-			  	map.addLayer(mFirstTrip);
  			   } 
 				
 		function firstFunc() {
