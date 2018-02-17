@@ -479,12 +479,6 @@ var cities = L.geoJson(allCities, {
 	}
 });
 cities.addTo(map);
-
-map.removeLayers(mFirstTrip);
  
-
-//map.addEventListener('click', function(e) {
-  //  alert(e.latlng);
-//});
 
 
